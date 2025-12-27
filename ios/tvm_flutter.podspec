@@ -18,7 +18,8 @@ Model plugins (e.g., charsiug2p_flutter) depend on this to avoid duplicate TVM s
   s.author           = { 'Yunho Cho' => 'opensource@yunhocho.com' }
   s.source           = { :path => '.' }
   s.source_files     = 'Classes/**/*'
-  s.platform         = :ios, '14.0'
+  s.dependency 'Flutter'
+  s.platform         = :ios, '13.0'
 
   # Static libraries
   s.vendored_libraries = 'libs/libtvm_runtime.a', 'libs/libtvm_ffi_static.a'
