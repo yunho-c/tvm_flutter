@@ -1,0 +1,19 @@
+name: tvm_flutter
+description: Provides TVM C++ runtime for Flutter plugins.
+version: 0.0.1
+publish_to: none
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: TvmFlutterPlugin
+      macos:
+        pluginClass: TvmFlutterPlugin
